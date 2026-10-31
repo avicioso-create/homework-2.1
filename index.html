@@ -2,32 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Adrian Vicioso, Strength Coach</title>
-    <link rel='stylesheet' href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header>
-    <img src="bmyptla.jpg" alt="logo of the company">
-    <h1>Home</h1>
-    <p>Your Name: Adrian Vicioso.</p>
-</header>
-<main>
-   <section>
-      <h2>Welcome, to the best routine</h2>
-      <p>This is 300 Training</p>
-      <img src="300.png" alt="logo of the routine">
-</section>
+    <!-- Header: Flexbox (stacked on mobile, side by side on tablet/desktop) -->
+    <header class="main-header">
+        <img src="bmyptla.jpg" alt="Company logo" class="header-logo">
+        <div class="header-text">
+            <h1>Home</h1>
+            <p>Adrian Vicioso, Strength Coach</p>
+        </div>
+    </header>
 
-<section>
-    <h2>This is the first website, that gives you the famous routine that changes your body in 90 days</h2>
-    <h3>In just 90 days, you will have the body you need</h3>
-    <ul>
-        <li>I am a Strength Coach</li>
-        <li>Be ready to be transformed</li>
-    </ul>
-   </section>
-  </main>
-<footer>Created by Adrian Vicioso.</footer>
-<img src="Adrian-Vicioso.jpg" alt="Creator of the routine">
+    <!-- Main: CSS Grid (1 column mobile, 2 columns tablet, 3 columns desktop) -->
+    <main class="card-grid">
+        <section class="card">
+            <h2>Welcome to the Best Routine</h2>
+            <p>This is 300 Training.</p>
+            <img src="300.png" alt="300 Training logo" class="card-img">
+        </section>
+
+        <section class="card">
+            <h2>The 90-Day Transformation</h2>
+            <p>This is the first website that gives you the famous routine that changes your body in 90 days.</p>
+            <h3>In just 90 days, you will have the body you need</h3>
+            <ul class="benefits-list">
+                <li>Designed by a certified Strength Coach</li>
+                <li>Be ready to be transformed</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Meet Your Coach</h2>
+            <img src="Adrian-Vicioso.jpg" alt="Adrian Vicioso, creator of the routine" class="card-img">
+            <p>I am a Strength Coach, and I created this routine to help you reach your goals.</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Created by Adrian Vicioso.</p>
+    </footer>
 </body>
 </html>
